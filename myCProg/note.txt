@@ -1,0 +1,25 @@
+//  FFT module
+to complie:  gcc myFFTv4.c -o fft4 -lm
+to run:      ./fft4 test32f.txt 32
+
+//  Default .bashrc in UBuntu
+vi ~/.bashrc
+
+// in other (Centos): ~/.cshrc 
+
+
+Tạo các file object (main.o, sum.o lưu vào folder output từ các file sources)
+gcc -l ./include/sum.h -c ./source/main.c -o ./output/main.o
+gcc -l ./include/sum.h -c ./source/sum.c -o ./output/sum.o
+Link các file object với nhau tạo thành file main.exe lưu trong folder output
+gcc ./output/main.o ./output/sum.o -o ./output/main.exe
+Để chạy file main.exe thì ta nhảy vào trong folder output và gọi main.exe.
+./output/main.exe
+Để xóa các file trong output, ta nhảy vào đó gọi rm
+rm ./output/*
+
+// gcc
+gcc main.c sum.c -o main
+
+// make file
+https://www.youtube.com/watch?v=aw9wHbFTnAQ
